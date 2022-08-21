@@ -264,7 +264,33 @@ line-height: 1.18;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--text-color);
-padding-bottom: 30px;
+margin-bottom: 16px;
+}
+.team-soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+.team-soc-link {
+    width: 44px;
+    height: 44px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.soc-link-icon {
+    fill: #afb1b8;
+}
+.team-soc-link:hover,
+.team-soc-link:focus {
+    background-color: var(--brand-color);
+}
+.team-soc-link:hover .soc-link-icon,
+.team-soc-link:focus .soc-link-icon {
+    fill: #FFFFFF;
 }
 /* partfolio btn */
 .menu-btn-list {
@@ -344,9 +370,12 @@ display: flex;
 align-items: center;
 justify-content: center;
 }
-.icon-clients-hover:hover,
-.icon-clients-hover:focus {
-    color: var(--brand-color);
+.icon-clients {
+    fill: #afb1b8;
+}
+.icon-clients:hover,
+.icon-clients:focus {
+    fill: var(--brand-color);
 }
 /* footer */
 .footer {
