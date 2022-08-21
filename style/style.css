@@ -105,6 +105,7 @@ letter-spacing: 0.02em;
 color: #212121;
 }
 .header-contacts-link {
+    display: flex;
     text-decoration: none;
     font-weight: 500;
 font-size: 14px;
@@ -424,21 +425,15 @@ color: rgba(255, 255, 255, 0.6);
     color: var(--brand-color);
 }
 /* footer soc menu */
-.footer {
+.footer-container {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-.footer-soc-menu {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    align-items: baseline;
 }
 .footer-soc-list {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 10px;
+    margin-left: 70px;
 }
 .footer-soc-menu-title {
     font-weight: 700;
@@ -448,6 +443,7 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #FFFFFF;
 margin-bottom: 20px;
+margin-left: 70px;
 }
 .footer-soc-link {
     width: 44px;
