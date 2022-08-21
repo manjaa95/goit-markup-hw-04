@@ -2,6 +2,9 @@ body {
     font-family: 'Roboto', sans-serif;
     color: black;
 }
+html {
+    box-sizing: border-box;
+}
 h1,
 h2,
 h3,
@@ -52,6 +55,11 @@ padding-right: 15px;
     --brand-color: #2196F3;
     --background-color: #2F303A;
     --text-color: #757575;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
 }
 /* header */
 .logo {
@@ -122,6 +130,7 @@ color: var(--text-color);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    width: 1600px;
 }
 .hero-container {
     display: flex;
@@ -177,6 +186,16 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--text-color);
 width: 270px;
+}
+.inside-bg {
+    background: #F5F4FA;
+border-radius: 4px;
+width: 270px;
+height: 120px;
+margin-bottom: 30px;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 /* work */
 .work {
